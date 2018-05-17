@@ -44,7 +44,7 @@ public class UserDetailsPresenter implements UserDetailContract.Presenter {
 
             @Override
             public void onFailure(Call<JsonObject> call, Throwable t) {
-
+                view.onFailure();
             }
         });
     }
